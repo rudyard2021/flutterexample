@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutterexample/header.dart';
+import 'back_wheater.dart';
 
 void main() => runApp(MyApp());
 
@@ -7,12 +9,11 @@ class MyApp extends StatelessWidget {
     @override
     Widget build(BuildContext context) {
         return MaterialApp(
-            home: Scaffold(
-                appBar: AppBar(
-                    title: Text('My First App'),
-                ),
-                body: Text('This is my default Text'),
+            title: 'My first Demo',
+            theme: ThemeData(
+                primarySwatch: Colors.blue,
             ),
+            home: new Header() ,
         );
     }
 }
