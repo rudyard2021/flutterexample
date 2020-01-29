@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutterexample/back_wheater.dart';
+import 'package:flutterexample/list.dart';
 
 class Header extends StatelessWidget{
     @override
@@ -52,14 +53,15 @@ class Header extends StatelessWidget{
                     child: new Column(
                         children: <Widget>[
                             new Text(
-                                "TUESDAY",
+                                "MONDAY",
                                 style: const TextStyle(
                                     fontSize: 55.0,
                                     color: Color(0xFFeba800),
                                     fontWeight: FontWeight.w600,
                                 )
                             ),
-                            button
+                            button,
+                            new Lista(),
                         ],
                     )
                 ),
